@@ -1,6 +1,5 @@
-function prixTTC() {
-  let ht = 100,
-    tva = 20;
+export function prixTTC(ht, tva) {
   let ttc = ht + (ht * tva) / 100;
   console.log("Prix TTC =", ttc);
+  return ttc;
 }
